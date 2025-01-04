@@ -1,174 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Dashboard Design </title>
-        <link rel="stylesheet" href="style.css" />
-        <!-- Font Awesome Cdn link -->
-        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    </head>
-    <body>
-        <div class="sidebar">
-            <div class=" logo"></div>
-                <ul class="menu">
-                    <li class="active">
-                        <a href="#"><i class="fas fa-tachometer-alt"></i>
-                        <span>dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-user"></i>
-                        <span>Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-chart-bar"></i>
-                        <span>Statistics</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-briefcase"></i>
-                        <span>Careers</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-question-circle"></i>
-                        <span>FAQ</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-star"></i>
-                        <span>Testimonials</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-cog"></i>
-                        <span>Settings</span>
-                        </a>
-                    </li>
-                    <li class=" logout">
-                        <a href="#">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span>Logout </span>
-                        </a>
-                    </li>
-                </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Child Wallet - The Best Program to Engage children how to save money</title>
+  <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+    <link rel="stylesheet" href="./assets/css/style.css">
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">
+        <img src="c:\Users\name\Desktop\New folder\Template\media\image\4.JPG" width="152" height="90" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#career" class="navbar-link" data-nav-link>Career</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <a href="advisor.html" class="btn has-before">
+          <span class="span">Book A advisor</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #ome
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              The Best Program To <span class="span">Engage</span> Children How To Save Money
+            </h1>
+
+            <p class="hero-text">
+              YOUR MONEY, YOUR FUTURE.
+            </p>
+
+            <a href="#career" class="btn has-before">
+              <span class="span">Start Your Journey Now</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/home_1.png" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/istockphoto-removebg-preview.png" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+           
+
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+      <!--
+          what we provide
+      -->
+      
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+
+          <h2 class="h2 section-title">
+            What We  <span class="span">Provide</span>.
+          </h2>
+
+          <p class="section-text">
+            During your educational journey, you will acquire many skills and information that will qualify you to solve the problems you faces in your life and achieving your financial goals and the correct way to set your goals.
+          </p>
+
+          <ul class="grid-list">
+            <style>
+              .category-card{
+                height: 450px;
+              }
+            </style>
+
+
+            <li>
+              <div class="category-card" style="--color: 24.2, 99.6%, 49.8%">
+
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Critical Thinking</a>
+                </h3>
+
+                <p class="card-text">
+                  In an age of information overload, the ability to think critically is more important than ever. Encouraging your child to question, analyze, and evaluate information will help them make informed decisions and navigate the complexities of the world around them.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 24.2, 99.6%, 49.8%">
+
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Problem-Solving</a>
+                </h3>
+
+                <p class="card-text">
+                  Life is full of problems, big and small. By fostering your child's problem-solving skills from a young age, you empower them to tackle challenges head-on and find effective solutions.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 24.2, 99.6%, 49.8%">
+
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Preparing for the Future</a>
+                </h3>
+
+                <p class="card-text">
+                  The habits and skills children develop through setting and achieving financial goals lay the foundation for their future financial stability and success.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 24.2, 99.6%, 49.8%">
+
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Encourages Creativity and Confidence</a>
+                </h3>
+
+                <p class="card-text">
+                  allows children to bring their ideas to life and prepare them to become more self-assured individuals ready to take on new challenges.
+                </p>
+
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #career
+      -->
+
+      <section class="section category"  id="career" aria-label="career">
+        <div class="container">
+
+          <p class="section-subtitle">Career</p>
+
+          <h2 class="h2 section-title">
+            A PRACTICAL <span class="span">MONEY GUIDE </span> FOR KIDS.
+          </h2>
+
+          
+          <p class="section-text" style="font-weight: bold;">
+            How about we set a goal to save up for something you really want? It could be a toy or a game.
+          </p>
+
+          <p class="section-text" style="font-weight: bold;">
+            How To Start Career ?
+          </p>
+
+          <p class="section-text">
+            you’ll learn to earn, save, budget, spend, borrow, protect and give , after that you can handle your money , qualifies you to become an entrepreneur one day and achieve your goal
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="earn.html" class="card-title">Earn</a>
+                </h3>
+
+                <p class="card-text">
+                  Earning is the first step in your journey to managing money wisely so  you can build a good future.
+                </p>
+
+                <a href="earn.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="save.html" class="card-title">Save</a>
+                </h3>
+
+                <p class="card-text">
+                  Making smart choices with your money is the first step toward becoming financially fit. 
+                </p>
+
+                <a href="save.html" class="btn has-before" >
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="budget.html" class="card-title">Budget</a>
+                </h3>
+
+                <p class="card-text">
+                  You need to buy a jacket, camera but you also want to buy a new phone. How do you choose the best? 
+                </p>
+
+                <a href="budget.html.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="spend.html" class="card-title">Spend</a>
+                </h3>
+
+                <p class="card-text">
+                  Spending may like the easy part of managing your money, but there are many tips  that can help you save. 
+                </p>
+
+                <a href="spend.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="borrow.html" class="card-title">Borrow</a>
+                </h3>
+
+                <p class="card-text">
+                  You can reach your long-term goals by borrowing  and paying it back later.
+                </p>
+
+                <a href="borrow.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="protect.html" class="card-title">Protect</a>
+                </h3>
+
+                <p class="card-text">
+                  Earning money is hard work.it’s just as important to protect your money .
+                </p>
+
+                <a href="protect.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="give.html" class="card-title">Give</a>
+                </h3>
+
+                <p class="card-text">
+                  When you think about tomorrow, what kind of future do you envision? 
+                </p>
+
+                <a href="give.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="Wrap up.html" class="card-title">Wrap Up</a>
+                </h3>
+
+                <p class="card-text">
+                  understanding good money habits and setting goals.  
+                </p>
+
+                <a href="Wrap up.html" class="btn has-before">
+                  <span class="span">Start Now </span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder" style="--width: 520; --height: 370;">
+              <img src="./assets/images/b.jpg" width="580" height="370" loading="lazy" alt="about banner"
+                class="img-cover">
+            </div>
+
+
+
+            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+            class="shape about-shape-3" >
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">
+              your first step in<span class="span"> handling your money</span>  start here.
+            </h2>
+
+            <p class="section-text">
+              One of the best things about having your own money is that you get to choose how to use it.
+               Whether you get a weekly allowance or get paid for your skills.
+            </p>
+
+            <p class="section-text">
+              It takes a bit of practice to master your money, just like it takes time to learn to ride a bike. 
+              But once you get the hang of it, you’ll be ready to tackle all sorts of money twists and turns. 
+              In this money guide, you’ll learn to earn, save, budget, spend, borrow, protect and give.
+
+            </p>
+
+            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #booking advisor
+      -->
+
+      <section class="section course" id="advisor" aria-label="advisor">
+        <div class="container">
+
+          <p class="section-subtitle">Booking Advisor</p>
+
+          <h2 class="h2 section-title">Why booking advisor</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/3.jpg" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title">Customized Plans For Children</a>
+                  </h3>
+
+                  <p> Parents can make a plan with the teacher during the child's education journey to achieve their customized goals</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/2.jpg" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title">Continuous Follow-up With Children</a>
+                  </h3>
+
+                  <p> Continuous follow-up with children to provide them with many skills and  achieve customized goals </p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/1.jpg" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title">improve their behavior in spending money</a>
+                  </h3>
+
+                  <p>Childrens will learn many skills lead them to achieve their goals.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="advisor.html" class="btn has-before">
+            <span class="span">BOOKING NOW</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #Successful Young Entrepreneurs
+      -->
+
+      <section class="section course" id="advisor" aria-label="advisor">
+        <div class="container">
+          <h2 class="h2 section-title">Successful Young Entrepreneurs</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <video controls width="400" height="200">
+                  <source src="./assets/images/Shark Tank US ｜ 10-Year-Old Entrepreneur Wows Sharks With Her Baby Spoon Product.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title">Shark Tank US</a>
+                  </h3>
+
+                  <p> 10-Year-Old Entrepreneur Wows Sharks With Her Baby Spoon Product</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <video controls width="400" height="200">
+                  <source src="./assets/images/Shark Tank US ｜ Father and Son Duo Pitch Their 'Touch Up Cup'.mp4" type="video/mp4">
+                  
+                </video>
+
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title">Shark Tank US</a>
+                  </h3>
+
+                  <p> Father and Son Duo Pitch Their 'Touch Up Cup</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <video controls width="400" height="200">
+                  <source src="./assets/images/Children： New billionaires - BBC News.mp4" type="video/mp4">
+                  
+                </video>
+
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="advisor.html" class="card-title"> BBC News</a>
+                  </h3>
+
+                  <p>New billionaires.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')" id="contact">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+
+        <div class="footer-brand">
+
+          <h1>Finskillz</h1>
+
+          <p class="footer-brand-text">
+            One of the best things about having your own money is that you get to choose how to use it.
+            Whether you get a weekly allowance or get paid for your skills.
+          </p>
+
         </div>
 
+        <ul class="footer-list">
 
-        <div class="main--content">
-            <div class="header--wrapper">
-                <div class="header--title">
-                    <span>Primary</span>
-                    <h2>Dashboard</h2>
-                </div>
-                <div class="user--info">
-                <div class="searh--box">
-                    <i class="fa-solid fa-search"></i>
-                    <input type="text"placeholder="Search" />
-                </div>
-                <img src="../Dashboard/account.png" alt="" />
-                </div>
-            </div>
-            <div class="card--container">
-                <div class="account">
-                    <div class="balance">
-                        <img src="./wallet.png" alt="">
-                        <br>
-                        <a href="#" >Your Balance</a>
-                        <br>
-                        <span>65$</span>
-                    </div>
-                    <div class="Transaction">
-                        <div class="Deposit">
-                            <img src="./deposit.png" alt="">
-                            <br>
-                            <a href="#">Deposit</a>
-                            <br>
-                            <span>---------</span>
-                        </div>
-                        <div class="Withdrawal">
-                            <img src="./withdraw.png" alt="">
-                            <br>
-                            <a href="#"> Withdrawal</a>
-                            <br>
-                            <span>---------</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor Profile</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Purchase Guide</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+
+        </ul>
 
 
 
-            <div class="tabular--wrapper">
-                <h3 class="main--title" >Finance data</h3>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th> Transaction Type</th>
-                                <th> Description</th>
-                                <th> Amount</th>
-                                <th> Category</th>
-                                <th> Status</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>2023-05-01</td>
-                            <td>Expenses</td>
-                            <td>Office Supplies</td>
-                            <td>$250</td>
-                            <td>Office Expenses</td>
-                            <td>Pending</td>
-                            
-                            </tr>
-                            <tr>
-                                <td>2023-05-01</td>
-                                <td>Income</td>
-                                <td>Client Payment</td>
-                                <td>$290</td>
-                                <td>Sales</td>
-                                <td>Completed</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>2023-05-01</td>
-                                <td>Expenses</td>
-                                <td>Office Supplies</td>
-                                <td>$250</td>
-                                <td>Office Expenses</td>
-                                <td>Pending</td>
-                                
-                            </tr>
-                            <td>2023-05-03</td>
-                                <td>Income</td>
-                                <td>Travel Expenses</td>
-                                <td>$850</td>
-                                <td >Travel</td>
-                                <td>Pending</td>
-                                
-                            <tr>
-                                <td>2023-05-01</td>
-                                <td>Expenses</td>
-                                <td>Office Supplies</td>
-                                <td>$250</td>
-                                <td>Office Expenses</td>
-                                <td>Pending</td>
-                                
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="7" >Total:$1,890 </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+
+
         </div>
-    </body>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>

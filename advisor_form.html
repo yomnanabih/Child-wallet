@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="radio"] {
+      width: calc(100% - 10px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: hsl(24.2, 99.6%, 49.8%);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: hsla(24, 99%, 50%, 0.562);
+    }
+
+    .error-message {
+      color: #FF0000;
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Register For Better Future</h2>
+    <form id="subscribeForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Parent's name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="childName">Child's Name:</label>
+        <input type="text" id="childName" name="childName" required>
+      </div>
+      <div class="form-group">
+        <label for="parentEmail">Parent's Email:</label>
+        <input type="email" id="parentEmail" name="parentEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="childEmail">Child's Email:</label>
+        <input type="email" id="childEmail" name="childEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Parent's Phone number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="importance">How important do you think it is for children to learn about fintech?</label>
+        <div>
+          <input type="radio" id="notImportant" name="importance" value="Not Important" required>
+          <label for="notImportant">Not Important</label>
+        </div>
+        <div>
+          <input type="radio" id="somewhatImportant" name="importance" value="Somewhat Important">
+          <label for="somewhatImportant">Somewhat Important</label>
+        </div>
+        <div>
+          <input type="radio" id="veryImportant" name="importance" value="Very Important">
+          <label for="veryImportant">Very Important</label>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="form-group">
+        <label for="teach">What do you want to teach your child?</label>
+        <div>
+          <input type="radio" id="teachCoding" name="teach" value="Coding" required>
+          <label for="teachCoding">Coding</label>
+        </div>
+        <div>
+          <input type="radio" id="teachGaming" name="teach" value="Gaming">
+          <label for="teachGaming">Gaming</label>
+        </div>
+        <div>
+          <input type="radio" id="teachVoiceover" name="teach" value="Voiceover">
+          <label for="teachVoiceover">Voiceover</label>
+        </div>
+        <div>
+          <input type="radio" id="teachArt" name="teach" value="Art">
+          <label for="teachArt">Art</label>
+        </div>
+      </div>
+
+      <br>
+       
+      <div class="form-group">
+        <label for="savings">Why subscribe for your child here ?</label>
+        <input type="text" id="savings" name="savings" required>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="monitoring">You like to monitor your child’s performance on:</label>
+        <div>
+          <input type="radio" id="monitorDaily" name="monitoring" value="Daily" required>
+          <label for="monitorDaily">Daily</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorWeekly" name="monitoring" value="Weekly">
+          <label for="monitorWeekly">Weekly</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorMonthly" name="monitoring" value="Monthly">
+          <label for="monitorMonthly">Monthly</label>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="monitoring">Your weekly goal for learning your child is :</label>
+        <div>
+          <input type="radio" id="monitorDaily" name="monitoring" value="Daily" required>
+          <label for="monitorDaily">Two Days</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorWeekly" name="monitoring" value="Weekly">
+          <label for="monitorWeekly">Three Days</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorMonthly" name="monitoring" value="Monthly">
+          <label for="monitorMonthly">Five Days</label>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="monitoring">where are you hearing from us :</label>
+        <div>
+          <input type="radio" id="monitorDaily" name="monitoring" value="Daily" required>
+          <label for="monitorDaily">facebook</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorWeekly" name="monitoring" value="Weekly">
+          <label for="monitorWeekly">youtube</label>
+        </div>
+        <div>
+          <input type="radio" id="monitorMonthly" name="monitoring" value="Monthly">
+          <label for="monitorMonthly">x</label>
+        </div>  
+        <div>
+          <input type="radio" id="monitorMonthly" name="monitoring" value="Monthly">
+          <label for="monitorMonthly">friends</label>
+        </div>  
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="development">What skills or knowledge do you need to develop ?</label>
+        <input type="text" id="development" name="development" required>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Subscribe">
+      </div>
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var parentEmail = document.getElementById('parentEmail').value;
+      var childEmail = document.getElementById('childEmail').value;
+      var phoneNumber = document.getElementById('phoneNumber').value;
+      var location = document.getElementById('location').value;
+      var importance = document.querySelector('input[name="importance"]:checked');
+      var teach = document.querySelector('input[name="teach"]:checked');
+      var savings = document.getElementById('savings').value;
+      var monitoring = document.querySelector('input[name="monitoring"]:checked');
+      var development = document.getElementById('development').value;
+      var errorMessage = document.getElementById('error-message');
+
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(parentEmail) || !emailPattern.test(childEmail)) {
+        errorMessage.textContent = 'Please enter valid email addresses.';
+        return false;
+      }
+
+      errorMessage.textContent = '';
+      alert('Thank you for subscribing, ' + name + '!');
+      return true;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Community</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/222cea3eed.js"></script>
+  </head>
+  <body>
+
+
+    <div class="sidebar">
+      <div class="sidebar__top">
+        
+        <p>Finskillz Communities</p>
+      </div>
+
+      <div class="sidebar__icon">
+        <i class="fas fa-compact-disc fa-lg"></i>
+        <a href="help.html">
+        <span >Help!</span>
+        </a>
+      </div>
+
+      <div class="sidebar__users">
+        <div class="sidebar__usersHeader">
+          <div class="sidebar__header">
+            <h4>Communities</h4>
+          </div>
+          
+        </div>
+
+      
+        <div>
+          <div class="sidebar__user">
+            <div>
+              <a href="gaming.html">
+              <span class="status"></span>
+              <img src="assets/gaming.jpeg" alt="avatar" />
+              </a>
+            </div>
+            <h4>Gaming</h4>
+          </div>
+
+
+          <div class="sidebar__user">
+            <div>
+              <a href="voiceover.html">
+              <span class="status"></span>
+              <img src="assets/voice_over.png" alt="avatar" />
+              </a>
+            </div>
+            <h4>Voice Over</h4>
+          </div>
+
+
+          <div class="sidebar__user">
+            <div>
+            <a href="draw.html">
+              <span class="status"></span>
+              <img src="assets/draw.png" alt="avatar" />
+            </a> 
+            </div>
+            <h4 >Draw</h4>
+          </div>
+
+          <div class="sidebar__user">
+            <div>
+              <a href="coding.html">
+              <span class="status"></span>
+              <img src="assets/coding.jpeg" alt="avatar" />
+            </a>
+            </div>
+            <h4>Coding</h4>
+          </div>
+        </div>
+        
+
+
+      </div>
+      <div class="sidebar__profile">
+        <div>
+          <span class="status"></span>
+          <img src="assets/user.png" alt="avatar" />
+        </div>
+        <div class="sidebar__profileInfo">
+          <h3>Ahmed</h3>
+          <p>#1234</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="chat">
+      <div>
+        <div class="chatHeader">
+          <div class="chatHeader__left">
+            <span class="chatHeader__Dm">@</span>
+            <h3>Coding Community</h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="chat__messages">
+          <div class="message">
+              <img src="assets/coding.jpeg" alt="avatar">
+              <div class="message__info">
+                  <h3>Coding <span class="message__timestamp"></span></h3>
+                  <p>Happy to see you here <br>
+                    share your knowledge and accomplishments here. 
+
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="chat__input">
+        <i class="fas fa-plus-circle fa-lg"></i>
+        <form enctype="multipart/form-data" method="post" action="upload.php">
+            <input class="sendMessage" type="text" placeholder="send message">
+            <input class="fileInput" type="file" name="file" accept=".mp3, .mp4">
+            <button class="chat__inputButton" type="submit">Send</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
