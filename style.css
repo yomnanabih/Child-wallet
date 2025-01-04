@@ -1,0 +1,233 @@
+
+.template-header-top .template-main{
+width: 90%;
+}
+
+
+.template-background-image.template-background-image-1 {
+   background-image: url(../media/image/_sample/690x506/Tech-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-position: center;
+}
+.template-icon-menu.template-icon-menu-family{
+   background-image: url(../media/image/icon/menu/shield.png);
+  
+
+}
+
+.template-icon-menu.template-icon-menu-dashboard{
+   background-image: url(../media/image/icon/menu/dashboard1.png);
+   
+   color: #56509f;
+}
+.template-icon-feature.template-icon-feature-name-money{
+   background-image: url(../media/image/icon/feature/large/paid_FILL0_wght500_GRAD0_opsz48.png);
+   
+   
+}
+.template-background-image.template-background-image-3 {
+   background-image: url('../media/image/invest__1708584735810_1708720541496.avif');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
+   
+.M_R{
+   width: 100%;
+   
+   
+}
+
+.template-component-menu-responsive .M_R i {
+   top: 1px;
+   right: 8px;
+   width: 6px;
+   height: 6px;
+   float: right;
+   line-height: 1em;
+   position: relative;
+   border-style: solid;
+   display: inline-block;
+   font-weight: bold;
+   
+}
+.trl:hover a{
+   color: white;
+}
+.M_R,.trl a{
+   
+   font-weight: bold;
+   
+}
+.topnav .icon {
+      display: none;
+    }
+ 
+
+    @media screen and (max-width: 950px) {
+      .topnav a.icon {
+         float: right;
+         display: block;
+       }
+      .topnav a:not(:first-child) {
+         display: none;
+      }
+      
+    }
+    
+    @media screen and (max-width: 950px) {
+      .topnav.responsive {
+         position: relative;
+      }
+      
+      .topnav.responsive a.d {
+        float: none;
+        display: none;
+        text-align: left;
+        
+      }
+    }
+
+.template-icon-menu.template-icon-menu-stroller {
+      background-image: url('../media/image/icon/menu/cart.png');
+}
+
+.template-icon-feature.template-icon-feature-size-large.template-icon-feature-name-stroller-alt {
+   background-image: url('../media/image/shopping_cart_FILL0_wght100_GRAD-25_opsz40.png');
+}
+
+
+.template-icon-feature.template-icon-feature-size-medium.template-icon-feature-name-socialmedia {
+   background-image: url('../media/image/social-media.png');
+}
+
+
+/*translate*/
+
+.translate{
+   margin-left: 150px;
+
+} 
+/* arabic website*/
+.template-icon-menu.template-icon-menu-globe {
+   background-image: url('../media/image/language_FILL0_wght100_GRAD0_opsz4.png');
+}
+
+
+
+
+.translate a{
+  
+   background-color:#FE6500;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/*
+@media only screen and (max-width: 1592px) {
+   
+   .template-component-menu-default {
+      margin-left: 300px !important;
+  }
+  
+   }
+   @media only screen and (max-width: 1482px) {
+      .translate {
+         margin-left: 80px;
+     }
+
+   }
+
+      @media only screen and (max-width: 1403px) {
+         .sf-menu li{
+            width: 100px;
+         }
+      }
+      @media only screen and (max-width: 1313px) {
+         .template-header-top-logo img{
+            width: 190px;
+         }
+         .translate {
+            margin-left: 40px;
+        }
+      }
+      @media only screen and (max-width: 1267px) {
+         .template-header-top-logo img{
+            width: 170px;
+         }
+         .template-component-menu-default {
+            margin-left: 200px !important;
+        }
+         
+      } 
+      @media only screen and (max-width: 1157px) {
+         .template-component-menu-default {
+            margin-left: 150px !important;
+        }
+         .sf-menu li{
+            width: 80px;
+         }
+         
+      }
+
+*/
+@media only screen and (max-width: 1365px) {
+   .translate {
+      margin-left: 80px;
+   }
+
+}
+@media only screen and (max-width: 1281px) {
+   .sf-menu li {
+      width: 100px !important;
+   }
+   .template-header-top-logo{
+      width: 150px
+   }
+
+}
+@media only screen and (max-width: 1149px) {
+   .sf-menu li {
+      width: 90px !important;
+   }
+   .template-header-top-logo{
+      width: 140px
+   }
+   .translate {
+      margin-left: 50px;
+   }
+}
+
+@media only screen and (max-width: 1015px) {
+   
+   .translate {
+      margin-left: 30px;
+   }
+}
+@media only screen and (max-width: 989px) {
+   
+   .translate {
+      margin-left: 0px;
+   }
+}
+
+
+.template-component-menu-responsive .trl{
+   background-color: #FE6500;
+   width: 100px;
+   text-align: center;
+   border-radius: 20px;
+   padding: 10px 5px 10px 5px;
+   cursor: pointer;
+   position: absolute;
+   top: 40px;
+   right: 20px;
+}
+.template-component-menu-default{
+   float:  right !important;
+
+}
